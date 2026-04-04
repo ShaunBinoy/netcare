@@ -1094,7 +1094,7 @@
   });
 </script>
 <script>
-const scriptURL = "https://script.google.com/macros/s/AKfycbzCCX0jW3Ie6ZSOQGzLL8TJhWhyflXlDEq9fSI3IsLPLbpPuPhiX6m0exD2RXmruYl8-Q/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycby6PGQNWilwO58Ck-UeJcH6Z6A4KnzPlIu3w2XSaPVi5CUN8zEsuMvWHVZzFOsnFtw1mw/exec";
 
 document.querySelector(".btn-submit").addEventListener("click", async () => {
   const name = document.getElementById("name").value;
@@ -1102,16 +1102,19 @@ document.querySelector(".btn-submit").addEventListener("click", async () => {
   const message = document.getElementById("message").value;
 
   if (!name || !phone) {
-    alert("Please fill name and phone");
+    alert("Please enter name and phone number");
     return;
   }
 
-  const data = { name, phone, message };
+  const formData = new FormData();
+  formData.append("name", name);
+  formData.append("phone", phone);
+  formData.append("message", message);
 
   try {
-    const res = await fetch(scriptURL, {
+    await fetch(scriptURL, {
       method: "POST",
-      body: JSON.stringify(data)
+      body: formData
     });
 
     alert("Message sent successfully!");
@@ -1120,8 +1123,8 @@ document.querySelector(".btn-submit").addEventListener("click", async () => {
     document.getElementById("phone").value = "";
     document.getElementById("message").value = "";
 
-  } catch (err) {
-    alert("Something went wrong!");
+  } catch (error) {
+    alert("Error sending message");
   }
 });
 </script>
