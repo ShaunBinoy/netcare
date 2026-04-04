@@ -337,23 +337,59 @@
     .logo {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 10px;
   text-decoration: none;
 }
 
+/* Logo Image */
 .logo-img {
-  width: 120px;
-  height: 120px;
+  width: 300px;
+  height: auto;
   object-fit: contain;
 }
 
+/* Logo Text (if used separately) */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
 .logo-text span:first-child {
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a1f44;
 }
 
 .logo-text span:last-child {
-  font-size: 14px;
-  color: #555;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .logo-img {
+    width: 130px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .logo {
+    gap: 6px;
+  }
+
+  .logo-img {
+    width: 210px;
+  }
+
+  .logo-text span:first-child {
+    font-size: 16px;
+  }
+
+  .logo-text span:last-child {
+    font-size: 11px;
+  }
 }
   </style>
 </head>
@@ -401,7 +437,7 @@
     <div class="row align-items-center">
       <div class="col-lg-6">
         <div class="hero-badge">⚡ Kunnamkulam's Trusted Computer Shop</div>
-        <h1 class="hero-title">Best <span>Laptop Sales</span> & Service Center in Kunnamkulam</h1>
+        <h1 class="hero-title">Best Branded <span>Laptop, Desktop & Printer Sales</span> & Service Center in Kunnamkulam</h1>
         <p class="hero-sub">Serving students, home users, and office customers with quality products, expert repair, and unbeatable prices. Your one-stop <strong>computer shop near me</strong>.</p>
         <div class="hero-btns">
           <a href="tel:+919544477619" class="btn-hero-primary"><i class="fa-solid fa-phone"></i>+91 95444 77619</a>
@@ -453,13 +489,13 @@
         </div>
       </div>
       <div class="col-sm-6 col-lg-4">
-        <div class="svc-card">
-          <div class="svc-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
-          <h5>Laptop Exchange Offers</h5>
-          <p>Exchange your old laptop for a brand-new or refurbished one at the best prices. Best exchange value guaranteed at NETCARE COMPUTERS, Kunnamkulam.</p>
-          <a href="#contact" class="btn-enquire"><i class="fa-solid fa-arrow-right"></i> Enquire Now</a>
-        </div>
-      </div>
+  <div class="svc-card">
+    <div class="svc-icon"><i class="fa-solid fa-database"></i></div>
+    <h5>Data Recovery Services</h5>
+    <p>Recover lost or deleted data from laptops, desktops, hard drives, SSDs, and pen drives. We provide safe and reliable <strong>data recovery solutions</strong> for personal and business needs.</p>
+    <a href="#contact" class="btn-enquire"><i class="fa-solid fa-arrow-right"></i> Enquire Now</a>
+  </div>
+</div>
       <div class="col-sm-6 col-lg-4">
         <div class="svc-card">
           <div class="svc-icon"><i class="fa-solid fa-box-open"></i></div>
@@ -469,13 +505,21 @@
         </div>
       </div>
       <div class="col-sm-6 col-lg-4">
-        <div class="svc-card">
-          <div class="svc-icon"><i class="fa-solid fa-gamepad"></i></div>
-          <h5>Gaming Laptop Sales</h5>
-          <p>Top gaming laptops from ASUS ROG, Lenovo Legion, HP Omen, and more. Get the best gaming performance at affordable prices from your local <strong>laptop store</strong>.</p>
-          <a href="#contact" class="btn-enquire"><i class="fa-solid fa-arrow-right"></i> Enquire Now</a>
-        </div>
-      </div>
+  <div class="svc-card">
+  <div class="svc-icon">
+    <i class="fa-solid fa-shield-halved"></i>
+  </div>
+  <h5>CCTV & Security Services</h5>
+  <p>
+    Reliable CCTV and security solutions for homes, shops, and offices. 
+    We provide HD & IP camera installation, maintenance, and remote monitoring 
+    to ensure complete safety and protection of your property.
+  </p>
+  <a href="#contact" class="btn-enquire">
+    <i class="fa-solid fa-arrow-right"></i> Enquire Now
+  </a>
+</div>
+</div>
     </div>
   </div>
 </section>
@@ -486,79 +530,105 @@
     <div class="text-center">
       <span class="sec-label">Products</span>
       <h2 class="sec-title">Our Product Range</h2>
-      <p class="sec-sub mx-auto">Explore laptops, desktops, printers, accessories, CCTV, and networking gear at your trusted <strong>computer shop in Kunnamkulam</strong>.</p>
+      <p class="sec-sub mx-auto">
+        Explore laptops, desktops, printers, accessories, CCTV, and networking gear at your trusted 
+        <strong>computer shop in Kunnamkulam</strong>.
+      </p>
     </div>
+
     <div class="row g-4">
 
-  <!-- Product 1 -->
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="prod-card">
-      <img class="prod-img" src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dw=600&q=75" alt="Laptop Gaming Regular Kunnamkulam" loading="lazy"/>
-      <div class="prod-body">
-        <h5>Laptops (Gaming & Regular)</h5>
-        <p>
-          Wide range of gaming and regular laptops. Latest models from Dell, HP, Lenovo, ASUS, Acer, and Apple. 
-          New, used, and <strong>refurbished laptops</strong> available.
-        </p>
-        <a href="#contact" class="btn-prod">
-          <i class="fa-solid fa-cart-shopping"></i> Enquire Now
-        </a>
+      <!-- Product 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="prod-card">
+          <img class="prod-img" src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=600&q=75" alt="Laptop Gaming Regular Kunnamkulam" loading="lazy"/>
+          <div class="prod-body">
+            <h5>Laptops (Gaming & Regular)</h5>
+            <p>
+              Wide range of gaming and regular laptops. Latest models from Dell, HP, Lenovo, ASUS, Acer, and Apple. 
+              New, used, and <strong>refurbished laptops</strong> available.
+            </p>
+            <a href="#contact" class="btn-prod"><i class="fa-solid fa-cart-shopping"></i> Enquire Now</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Product 2 -->
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="prod-card">
-      <img class="prod-img" src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=600&q=75" alt="Desktop Computer Kunnamkulam" loading="lazy"/>
-      <div class="prod-body">
-        <h5>Desktop Computers</h5>
-        <p>
-          Assembled and branded desktop computers for home, office, and school use. 
-          Custom builds available to suit your budget and performance needs.
-        </p>
-        <a href="#contact" class="btn-prod">
-          <i class="fa-solid fa-cart-shopping"></i> Enquire Now
-        </a>
+      <!-- Product 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="prod-card">
+          <img class="prod-img" src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=600&q=75" alt="Desktop Computer Kunnamkulam" loading="lazy"/>
+          <div class="prod-body">
+            <h5>Desktop Computers</h5>
+            <p>
+              Assembled and branded desktop computers for home, office, and school use. 
+              Custom builds available to suit your budget and performance needs.
+            </p>
+            <a href="#contact" class="btn-prod"><i class="fa-solid fa-cart-shopping"></i> Enquire Now</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Product 3 -->
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="prod-card">
-      <img class="prod-img" src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=600&q=75" alt="Printers Epson Canon Brother Kunnamkulam" loading="lazy"/>
-      <div class="prod-body">
-        <h5>Printers – Epson, Canon, Brother</h5>
-        <p>
-          Inkjet, laser, and all-in-one printers for home and office. Best prices on Epson EcoTank, 
-          Canon Pixma, Brother laser printers in Kunnamkulam.
-        </p>
-        <a href="#contact" class="btn-prod">
-          <i class="fa-solid fa-cart-shopping"></i> Enquire Now
-        </a>
+      <!-- Product 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="prod-card">
+          <img class="prod-img" src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=600&q=75" alt="Printers Epson Canon Brother Kunnamkulam" loading="lazy"/>
+          <div class="prod-body">
+            <h5>Printers – Epson, Canon, Brother</h5>
+            <p>
+              Inkjet, laser, and all-in-one printers for home and office. Best prices on Epson EcoTank, 
+              Canon Pixma, Brother laser printers in Kunnamkulam.
+            </p>
+            <a href="#contact" class="btn-prod"><i class="fa-solid fa-cart-shopping"></i> Enquire Now</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Product 4 -->
-  <div class="col-12 col-md-6 col-lg-3">
-    <div class="prod-card">
-      <img class="prod-img" src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&q=75" alt="Computer Accessories Keyboard Mouse USB" loading="lazy"/>
-      <div class="prod-body">
-        <h5>Accessories</h5>
-        <p>
-          Keyboards, mice, USB hubs, headsets, laptop bags, chargers, hard drives, SSDs, RAM, 
-          and all computer accessories at competitive prices.
-        </p>
-        <a href="#contact" class="btn-prod">
-          <i class="fa-solid fa-cart-shopping"></i> Enquire Now
-        </a>
+      <!-- Product 4 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="prod-card">
+          <img class="prod-img" src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&q=75" alt="Computer Accessories Keyboard Mouse USB" loading="lazy"/>
+          <div class="prod-body">
+            <h5>Accessories</h5>
+            <p>
+              Keyboards, mice, USB hubs, headsets, laptop bags, chargers, hard drives, SSDs, RAM, 
+              and all computer accessories at competitive prices.
+            </p>
+            <a href="#contact" class="btn-prod"><i class="fa-solid fa-cart-shopping"></i> Enquire Now</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-</div>
+      <!-- Product 5 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="prod-card">
+          <img class="prod-img" src="https://images.unsplash.com/photo-1681894414300-afe6237219e1?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=600&q=75" alt="CCTV Camera Security Kunnamkulam" loading="lazy"/>
+          <div class="prod-body">
+            <h5>CCTV Cameras</h5>
+            <p>
+              HD and IP CCTV camera systems for home and business security. Installation, maintenance, 
+              and monitoring solutions from trusted brands.
+            </p>
+            <a href="#contact" class="btn-prod"><i class="fa-solid fa-cart-shopping"></i> Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="prod-card">
+          <img class="prod-img" src="https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=600&q=75" alt="Networking Router Switch Kunnamkulam" loading="lazy"/>
+          <div class="prod-body">
+            <h5>Networking Products</h5>
+            <p>
+              Routers, switches, LAN cables, Wi-Fi extenders, and complete network setup solutions 
+              for homes, offices, and shops.
+            </p>
+            <a href="#contact" class="btn-prod"><i class="fa-solid fa-cart-shopping"></i> Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -794,7 +864,7 @@
             <div class="contact-item-icon"><i class="fa-solid fa-clock"></i></div>
             <div>
               <h6>Working Hours</h6>
-              <p>Mon–Sat: 9:00 AM – 7:00 PM</p>
+              <p>Mon–Sat: 9:30 AM – 7:30 PM</p>
             </div>
           </div>
           <div class="contact-item">
@@ -805,7 +875,7 @@
             </div>
           </div>
           <div class="map-wrap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31301.65!2d76.08!3d10.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7e36e2b4ff221%3A0x2a7b3e7c9a0a3e00!2sKunnamkulam%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.141254500996!2d76.06173287767817!3d10.646132662407913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7955607238f99%3A0x6184c10c2de580e7!2sNETCARE%20COMPUTERS!5e0!3m2!1sen!2sin!4v1775289262208!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
