@@ -871,7 +871,7 @@
             <div class="contact-item-icon"><i class="fa-brands fa-whatsapp"></i></div>
             <div>
               <h6>WhatsApp</h6>
-              <a href="https://wa.me/91XXXXXXXXXX" target="_blank">Chat on WhatsApp</a>
+              <a href="https://wa.me/+919544477619" target="_blank">Chat on WhatsApp</a>
             </div>
           </div>
           <div class="map-wrap">
@@ -880,24 +880,38 @@
         </div>
       </div>
       <div class="col-lg-7">
-        <div style="background:var(--grey);border-radius:var(--radius);padding:36px 32px;">
-          <h5 style="font-weight:700;margin-bottom:24px;">Send Us a Message</h5>
-          <div class="mb-3">
-            <label class="form-label fw-semibold" style="font-size:0.85rem;">Your Name</label>
-            <input type="text" class="form-control" placeholder="Enter your name"/>
-          </div>
-          <div class="mb-3">
-            <label class="form-label fw-semibold" style="font-size:0.85rem;">Phone Number</label>
-            <input type="tel" class="form-control" placeholder="Enter your phone number"/>
-          </div>
-          <div class="mb-4">
-            <label class="form-label fw-semibold" style="font-size:0.85rem;">Message</label>
-            <textarea class="form-control" rows="5" placeholder="Tell us what you need – repair, purchase, enquiry..."></textarea>
-          </div>
-          <button class="btn-submit" type="button"><i class="fa-solid fa-paper-plane me-2"></i>Send Message</button>
-          <p style="font-size:0.78rem;color:var(--grey-mid);margin-top:14px;text-align:center;">Or call us directly at <a href="tel:+919544477619" style="color:var(--blue);font-weight:600;">+919544477619</a></p>
-        </div>
-      </div>
+  <div style="background:var(--grey);border-radius:var(--radius);padding:36px 32px;">
+    
+    <h5 style="font-weight:700;margin-bottom:24px;">Send Us a Message</h5>
+
+    <div class="mb-3">
+      <label class="form-label fw-semibold" style="font-size:0.85rem;">Your Name</label>
+      <input type="text" id="name" class="form-control" placeholder="Enter your name"/>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-semibold" style="font-size:0.85rem;">Phone Number</label>
+      <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number"/>
+    </div>
+
+    <div class="mb-4">
+      <label class="form-label fw-semibold" style="font-size:0.85rem;">Message</label>
+      <textarea id="message" class="form-control" rows="5" placeholder="Tell us what you need – repair, purchase, enquiry..."></textarea>
+    </div>
+
+    <button class="btn-submit" type="button">
+      <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+    </button>
+
+    <p style="font-size:0.78rem;color:var(--grey-mid);margin-top:14px;text-align:center;">
+      Or call us directly at 
+      <a href="tel:+919544477619" style="color:var(--blue);font-weight:600;">
+        +919544477619
+      </a>
+    </p>
+
+  </div>
+</div>
     </div>
   </div>
 </section>
@@ -918,7 +932,7 @@
         <div class="footer-social mt-3">
           <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/91XXXXXXXXXX" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://wa.me/+919544477619" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           <a href="https://www.google.com/search?q=NETCARE+COMPUTERS+Reviews" target="_blank" aria-label="Google"><i class="fa-brands fa-google"></i></a>
         </div>
       </div>
@@ -948,7 +962,7 @@
         <h6>Contact</h6>
         <ul class="footer-links">
           <li><i class="fa-solid fa-phone me-2" style="color:var(--blue-light);"></i><a href="tel:+919544477619">+919544477619</a></li>
-          <li><i class="fa-brands fa-whatsapp me-2" style="color:#25D366;"></i><a href="https://wa.me/91XXXXXXXXXX">WhatsApp Us</a></li>
+          <li><i class="fa-brands fa-whatsapp me-2" style="color:#25D366;"></i><a href="https://wa.me/+919544477619">WhatsApp Us</a></li>
           <li><i class="fa-solid fa-location-dot me-2" style="color:var(--blue-light);"></i>Kunnamkulam, Kerala</li>
           <li><i class="fa-solid fa-clock me-2" style="color:var(--blue-light);"></i>Mon–Sat: 9AM–7PM</li>
         </ul>
@@ -1078,6 +1092,38 @@
       this.style.background = '';
     }, 3000);
   });
+</script>
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbzCCX0jW3Ie6ZSOQGzLL8TJhWhyflXlDEq9fSI3IsLPLbpPuPhiX6m0exD2RXmruYl8-Q/exec";
+
+document.querySelector(".btn-submit").addEventListener("click", async () => {
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const message = document.getElementById("message").value;
+
+  if (!name || !phone) {
+    alert("Please fill name and phone");
+    return;
+  }
+
+  const data = { name, phone, message };
+
+  try {
+    const res = await fetch(scriptURL, {
+      method: "POST",
+      body: JSON.stringify(data)
+    });
+
+    alert("Message sent successfully!");
+
+    document.getElementById("name").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("message").value = "";
+
+  } catch (err) {
+    alert("Something went wrong!");
+  }
+});
 </script>
 </body>
 </html>
