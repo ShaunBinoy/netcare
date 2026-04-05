@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy Laptops in Kunnamkulam | Netcare Computers</title>
+  <meta name="description" content="Buy Gaming, Business & Budget Laptops at Best Price in Kunnamkulam. HP, Dell, Lenovo, ASUS available at Netcare Computers. Call 9544477619." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --primary-dark: #0a58ca;
+      --primary-light: #e8f0fe;
+      --accent: #f0a500;
+      --dark: #0b1120;
+      --surface: #f5f8ff;
+      --text-muted: #6c7a95;
+      --border: #dce6ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #1a2340;
+      background: #fff;
+      overflow-x: hidden;
+    }
+
+    /* ── TOPBAR ───────────────────────────────── */
+    .topbar {
+      background: var(--dark);
+      color: #cdd8f0;
+      font-size: 0.82rem;
+      padding: 7px 0;
+      letter-spacing: 0.01em;
+    }
+    .topbar a { color: #7eb3ff; text-decoration: none; }
+    .topbar a:hover { color: #fff; }
+
+    /* ── NAVBAR ───────────────────────────────── */
+    .main-navbar {
+      background: #fff;
+      border-bottom: 2px solid var(--border);
+      box-shadow: 0 2px 18px rgba(13,110,253,0.07);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .main-navbar .navbar-brand {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.65rem;
+      font-weight: 900;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+    .main-navbar .navbar-brand span { color: var(--dark); }
+    .main-navbar .nav-link {
+      font-weight: 600;
+      color: #2d3a55;
+      font-size: 0.95rem;
+      padding: 0.5rem 1rem;
+      transition: color 0.2s;
+    }
+    .main-navbar .nav-link:hover { color: var(--primary); }
+
+    /* ── HERO ─────────────────────────────────── */
+    .hero-section {
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #021133 0%, #0b2461 50%, #0d6efd 100%);
+    }
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 60% at 80% 50%, rgba(13,110,253,0.35) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 10% 80%, rgba(0,30,100,0.6) 0%, transparent 60%);
+      z-index: 1;
+    }
+    /* geometric accent lines */
+    .hero-section::after {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 500px; height: 500px;
+      border: 60px solid rgba(255,255,255,0.04);
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .hero-content { position: relative; z-index: 2; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(8px);
+    }
+    .hero-badge .dot {
+      width: 8px; height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse-dot 1.6s infinite;
+    }
+    @keyframes pulse-dot {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.4); }
+    }
+
+    .hero-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.05;
+      letter-spacing: -0.5px;
+      margin-bottom: 1rem;
+    }
+    .hero-title .highlight {
+      color: var(--accent);
+      display: block;
+    }
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.75);
+      font-weight: 400;
+      margin-bottom: 2rem;
+      max-width: 480px;
+    }
+
+    .hero-visual {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+    .hero-laptop-wrap {
+      position: relative;
+      display: inline-block;
+    }
+    .hero-laptop-wrap::before {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      height: 40px;
+      background: radial-gradient(ellipse at center, rgba(13,110,253,0.5) 0%, transparent 70%);
+      filter: blur(12px);
+    }
+    .hero-laptop-img {
+      width: 100%;
+      max-width: 540px;
+      filter: drop-shadow(0 30px 60px rgba(0,0,0,0.5));
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-14px); }
+    }
+
+    /* floating stat badges */
+    .stat-badge {
+      position: absolute;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 12px;
+      padding: 10px 16px;
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .stat-badge.top-left { top: 10%; left: -10px; }
+    .stat-badge.bottom-right { bottom: 18%; right: -10px; }
+    .stat-badge i { font-size: 1.1rem; color: var(--accent); }
+
+    /* hero scroll hint */
+    .scroll-hint {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.75rem;
+      text-align: center;
+      letter-spacing: 0.06em;
+    }
+    .scroll-hint i { display: block; font-size: 1.2rem; animation: bounce 2s infinite; }
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(6px); }
+    }
+
+    /* ── BUTTONS ──────────────────────────────── */
+    .btn-hero-primary {
+      background: var(--accent);
+      color: var(--dark);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 32px;
+      border-radius: 8px;
+      border: none;
+      transition: all 0.2s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-hero-primary:hover {
+      background: #d4920a;
+      color: var(--dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(240,165,0,0.35);
+    }
+    .btn-hero-outline {
+      background: transparent;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 13px 32px;
+      border-radius: 8px;
+      border: 2px solid rgba(255,255,255,0.35);
+      transition: all 0.2s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-hero-outline:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: #fff;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* ── TRUST BAR ────────────────────────────── */
+    .trust-bar {
+      background: var(--primary);
+      padding: 16px 0;
+      overflow: hidden;
+    }
+    .trust-bar-inner {
+      display: flex;
+      gap: 3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .trust-item {
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+    .trust-item i { font-size: 1.1rem; opacity: 0.85; }
+
+    /* ── SECTION HEADING ──────────────────────── */
+    .section-tag {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      color: var(--dark);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    section { padding: 80px 0; }
+
+    /* ── CATEGORY CARDS ───────────────────────── */
+    .cat-card {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 28px;
+      height: 100%;
+      transition: all 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+    .cat-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--primary);
+      transform: scaleX(0);
+      transition: transform 0.25s;
+      border-radius: 4px 4px 0 0;
+    }
+    .cat-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 48px rgba(13,110,253,0.12);
+      border-color: var(--primary);
+    }
+    .cat-card:hover::before { transform: scaleX(1); }
+
+    .cat-icon {
+      width: 64px; height: 64px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.25rem;
+    }
+    .cat-icon.gaming { background: #fff0e0; color: #e06c00; }
+    .cat-icon.business { background: #e8f0fe; color: var(--primary); }
+    .cat-icon.budget { background: #e7faf0; color: #198754; }
+    .cat-icon.refurb { background: #fce8ff; color: #8b2fc9; }
+
+    .cat-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    .cat-desc { color: var(--text-muted); font-size: 0.93rem; line-height: 1.6; margin: 0; }
+
+    /* ── BRANDS ───────────────────────────────── */
+    .brands-section { background: var(--surface); }
+    .brand-card {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 20px;
+      text-align: center;
+      transition: all 0.22s;
+      cursor: default;
+    }
+    .brand-card:hover {
+      border-color: var(--primary);
+      box-shadow: 0 8px 30px rgba(13,110,253,0.1);
+      transform: translateY(-4px);
+    }
+    .brand-logo-text {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: #1a2340;
+      letter-spacing: -1px;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .brand-card:hover .brand-logo-text { color: var(--primary); }
+    .brand-tagline { font-size: 0.75rem; color: var(--text-muted); font-weight: 500; }
+
+    /* ── WHY CHOOSE US ────────────────────────── */
+    .why-section { background: #fff; }
+    .why-visual {
+      background: linear-gradient(135deg, #0b2461 0%, #0d6efd 100%);
+      border-radius: 20px;
+      padding: 52px 44px;
+      color: #fff;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .why-visual::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 220px; height: 220px;
+      border: 40px solid rgba(255,255,255,0.06);
+      border-radius: 50%;
+    }
+    .why-visual::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 160px; height: 160px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 50%;
+    }
+    .why-stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 28px;
+      position: relative;
+      z-index: 1;
+    }
+    .why-stat {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .why-stat .num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .why-stat .lbl { font-size: 0.8rem; color: rgba(255,255,255,0.75); margin-top: 4px; }
+
+    .why-list { list-style: none; padding: 0; margin: 0; }
+    .why-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.97rem;
+      color: #2d3a55;
+    }
+    .why-list li:last-child { border-bottom: none; }
+    .why-list li .icon-wrap {
+      width: 38px; height: 38px;
+      background: var(--primary-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+    .why-list li strong { display: block; font-weight: 700; color: var(--dark); }
+    .why-list li span { font-size: 0.85rem; color: var(--text-muted); }
+
+    /* ── FEATURES ─────────────────────────────── */
+    .features-section { background: var(--surface); }
+    .feat-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 14px;
+      transition: all 0.2s;
+    }
+    .feat-row:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 20px rgba(13,110,253,0.08);
+    }
+    .feat-icon {
+      width: 46px; height: 46px;
+      background: var(--primary-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    .feat-title { font-weight: 700; font-size: 1rem; color: var(--dark); margin: 0; }
+    .feat-sub { font-size: 0.82rem; color: var(--text-muted); margin: 0; }
+
+    .spec-badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin: 3px 3px 3px 0;
+    }
+
+    /* ── CTA ──────────────────────────────────── */
+    .cta-section {
+      background: linear-gradient(135deg, #021133 0%, #0b2461 55%, #0d6efd 100%);
+      position: relative;
+      overflow: hidden;
+      padding: 90px 0;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 400px; height: 400px;
+      border: 70px solid rgba(255,255,255,0.04);
+      border-radius: 50%;
+    }
+    .cta-section::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -60px;
+      width: 280px; height: 280px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 50%;
+    }
+    .cta-section .rel { position: relative; z-index: 2; }
+
+    .cta-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .cta-phone {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: -1px;
+      text-decoration: none;
+      display: inline-block;
+      transition: color 0.2s;
+    }
+    .cta-phone:hover { color: #ffd055; }
+
+    .btn-cta-call {
+      background: var(--accent);
+      color: var(--dark);
+      font-weight: 800;
+      font-size: 1.05rem;
+      padding: 16px 36px;
+      border-radius: 10px;
+      border: none;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.2s;
+    }
+    .btn-cta-call:hover {
+      background: #d4920a;
+      color: var(--dark);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(240,165,0,0.35);
+    }
+
+    /* ── FOOTER ───────────────────────────────── */
+    .site-footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.6);
+      padding: 40px 0 24px;
+      font-size: 0.9rem;
+    }
+    .footer-brand {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 900;
+      color: #fff;
+    }
+    .footer-brand span { color: var(--primary); }
+    .footer-divider { border-color: rgba(255,255,255,0.1); margin: 24px 0; }
+    .footer-copy { color: rgba(255,255,255,0.35); font-size: 0.82rem; }
+
+    /* ── FLOATING BUTTONS ─────────────────────── */
+    .float-btn-wa, .float-btn-call {
+      position: fixed;
+      bottom: 28px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      z-index: 9999;
+      text-decoration: none;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .float-btn-wa { left: 24px; background: #25D366; color: #fff; }
+    .float-btn-call { right: 24px; background: var(--primary); color: #fff; }
+    .float-btn-wa:hover, .float-btn-call:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 32px rgba(0,0,0,0.3);
+    }
+    .float-btn-wa:hover { color: #fff; }
+    .float-btn-call:hover { color: #fff; }
+
+    /* pulse ring */
+    .float-btn-wa::before, .float-btn-call::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 3px solid currentColor;
+      opacity: 0;
+      animation: pulse-ring 2.5s infinite;
+    }
+    .float-btn-wa::before { color: #25D366; }
+    .float-btn-call::before { color: var(--primary); }
+    @keyframes pulse-ring {
+      0% { opacity: 0.6; transform: scale(1); }
+      100% { opacity: 0; transform: scale(1.55); }
+    }
+
+    /* tooltip labels */
+    .float-btn-wa .tip, .float-btn-call .tip {
+      position: absolute;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s;
+      bottom: 68px;
+    }
+    .float-btn-wa:hover .tip, .float-btn-call:hover .tip { opacity: 1; }
+
+    /* ── RESPONSIVE ───────────────────────────── */
+    @media (max-width: 767px) {
+      .hero-section { min-height: auto; padding: 80px 0 60px; }
+      .hero-visual { margin-top: 40px; }
+      .stat-badge { display: none; }
+      .why-visual { padding: 36px 28px; margin-bottom: 32px; }
+      section { padding: 60px 0; }
+    }
+   /* Logo default (Desktop) */
+.logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .logo {
+    height: 50px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .logo {
+    height: 38px;
+  }
+}
+
+/* Prevent logo from breaking layout */
+.navbar-brand {
+  max-width: 70%;
+}
+
+/* Align navbar properly */
+.navbar {
+  align-items: center;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+  </style>
+</head>
+<body>
+
+<!-- ══ TOPBAR ══════════════════════════════════════════════════ -->
+<!-- <div class="topbar">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <span><i class="bi bi-geo-alt-fill me-1"></i> Netcare Computers, Kunnamkulam, Thrissur</span>
+      <div class="d-flex gap-3">
+        <a href="tel:9544477619"><i class="bi bi-telephone-fill me-1"></i>9544477619</a>
+        <a href="https://wa.me/919544477619" target="_blank"><i class="bi bi-whatsapp me-1"></i>WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- ══ NAVBAR ══════════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg main-navbar">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+  <img src="images/logo.png" alt="Netcare Computers Logo" class="logo">
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+  <span class="navbar-toggler-icon"></span>
+</button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="#categories">Laptops</a></li>
+        <li class="nav-item"><a class="nav-link" href="#brands">Brands</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">Specs</a></li>
+        <li class="nav-item ms-lg-2">
+          <a href="tel:9544477619" class="btn btn-primary btn-sm px-3 fw-600 d-flex align-items-center gap-2">
+            <i class="bi bi-telephone-fill"></i> Call Now
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ════════════════════════════════════════════════════ -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- text -->
+      <div class="col-lg-6 hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span> Kunnamkulam's Trusted Laptop Store
+        </div>
+        <h1 class="hero-title">
+          Best Branded Laptop in<br>Kunnamkulam
+          <span class="highlight">at Best Price</span>
+        </h1>
+        <p class="hero-subtitle">Gaming, Business &amp; Budget Laptops Available — HP, Dell, Lenovo, ASUS &amp; more.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#categories" class="btn-hero-primary">
+            <i class="bi bi-laptop"></i> View Laptops
+          </a>
+          <a href="tel:9544477619" class="btn-hero-outline">
+            <i class="bi bi-telephone-fill"></i> Call Now
+          </a>
+        </div>
+      </div>
+      <!-- visual -->
+      <div class="col-lg-6 hero-visual mt-5 mt-lg-0">
+        <div class="hero-laptop-wrap">
+          <!-- SVG laptop illustration -->
+          <svg class="hero-laptop-img" viewBox="0 0 540 360" xmlns="http://www.w3.org/2000/svg">
+            <!-- Screen -->
+            <rect x="60" y="20" width="420" height="270" rx="14" fill="#1a2a4a"/>
+            <rect x="72" y="32" width="396" height="246" rx="8" fill="#0d1b35"/>
+            <!-- Screen glow / wallpaper -->
+            <defs>
+              <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#0a3a8c;stop-opacity:1"/>
+                <stop offset="100%" style="stop-color:#0d6efd;stop-opacity:1"/>
+              </linearGradient>
+              <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#2a3a5a"/>
+                <stop offset="100%" style="stop-color:#1a2840"/>
+              </linearGradient>
+            </defs>
+            <rect x="72" y="32" width="396" height="246" rx="8" fill="url(#screenGrad)"/>
+            <!-- screen content: abstract UI -->
+            <rect x="90" y="50" width="160" height="12" rx="6" fill="rgba(255,255,255,0.15)"/>
+            <rect x="90" y="70" width="100" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+            <rect x="90" y="100" width="360" height="60" rx="8" fill="rgba(255,255,255,0.06)"/>
+            <rect x="102" y="112" width="120" height="8" rx="4" fill="rgba(255,255,255,0.18)"/>
+            <rect x="102" y="128" width="80" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+            <rect x="90" y="180" width="110" height="40" rx="8" fill="rgba(240,165,0,0.8)"/>
+            <text x="145" y="205" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="13" font-weight="800" fill="#1a2340">BUY NOW</text>
+            <rect x="214" y="180" width="110" height="40" rx="8" fill="rgba(255,255,255,0.12)"/>
+            <text x="269" y="205" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="13" font-weight="700" fill="rgba(255,255,255,0.8)">View Deals</text>
+            <!-- hinge -->
+            <rect x="60" y="288" width="420" height="8" rx="2" fill="#121e35"/>
+            <!-- Base -->
+            <rect x="20" y="296" width="500" height="42" rx="8" fill="url(#bodyGrad)"/>
+            <!-- keyboard area -->
+            <rect x="60" y="304" width="420" height="26" rx="4" fill="rgba(0,0,0,0.25)"/>
+            <!-- keyboard keys (simplified) -->
+            <g fill="rgba(255,255,255,0.07)">
+              <rect x="68" y="308" width="18" height="8" rx="2"/>
+              <rect x="90" y="308" width="18" height="8" rx="2"/>
+              <rect x="112" y="308" width="18" height="8" rx="2"/>
+              <rect x="134" y="308" width="18" height="8" rx="2"/>
+              <rect x="156" y="308" width="18" height="8" rx="2"/>
+              <rect x="178" y="308" width="18" height="8" rx="2"/>
+              <rect x="200" y="308" width="18" height="8" rx="2"/>
+              <rect x="222" y="308" width="18" height="8" rx="2"/>
+              <rect x="244" y="308" width="18" height="8" rx="2"/>
+              <rect x="266" y="308" width="18" height="8" rx="2"/>
+              <rect x="288" y="308" width="18" height="8" rx="2"/>
+              <rect x="310" y="308" width="18" height="8" rx="2"/>
+              <rect x="332" y="308" width="18" height="8" rx="2"/>
+              <rect x="354" y="308" width="24" height="8" rx="2"/>
+              <rect x="382" y="308" width="18" height="8" rx="2"/>
+              <rect x="404" y="308" width="18" height="8" rx="2"/>
+              <rect x="68" y="320" width="80" height="8" rx="2" opacity=".5"/>
+              <rect x="160" y="320" width="220" height="8" rx="2" opacity=".5"/>
+              <rect x="392" y="320" width="50" height="8" rx="2" opacity=".5"/>
+            </g>
+            <!-- trackpad -->
+            <rect x="215" y="316" width="110" height="22" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <!-- bottom -->
+            <ellipse cx="270" cy="340" rx="200" ry="6" fill="rgba(0,0,0,0.3)"/>
+          </svg>
+
+          <!-- floating stat badges -->
+          <div class="stat-badge top-left">
+            <i class="bi bi-star-fill"></i>
+            <div>
+              <div style="font-size:1rem;font-weight:900;">4.9★</div>
+              <div style="font-size:0.7rem;opacity:0.7;">Customer Rating</div>
+            </div>
+          </div>
+          <div class="stat-badge bottom-right">
+            <i class="bi bi-shield-check-fill"></i>
+            <div>
+              <div style="font-size:0.9rem;font-weight:800;">Genuine Products</div>
+              <div style="font-size:0.7rem;opacity:0.7;">100% Authentic</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <i class="bi bi-chevron-down"></i>
+    SCROLL
+  </div>
+</section>
+
+<!-- ══ TRUST BAR ═══════════════════════════════════════════════ -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-item"><i class="bi bi-patch-check-fill"></i> Best Price Guarantee</div>
+      <div class="trust-item"><i class="bi bi-shield-fill-check"></i> Genuine Products</div>
+      <div class="trust-item"><i class="bi bi-arrow-left-right"></i> Exchange Offers</div>
+      <div class="trust-item"><i class="bi bi-credit-card-fill"></i> EMI Available</div>
+      <div class="trust-item"><i class="bi bi-geo-alt-fill"></i> Trusted Local Store</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CATEGORIES ══════════════════════════════════════════════ -->
+<section id="categories">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">Browse by Type</span>
+      <h2 class="section-title">Laptops for Every Need</h2>
+      <p class="section-subtitle">Whether you're a gamer, professional, student, or on a budget — we have the right laptop for you.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Gaming -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="cat-card overflow-hidden p-0">
+          <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?q=80&w=800&auto=format&fit=crop" class="w-100" style="height:180px; object-fit:cover;">
+          <div class="p-3">
+            <h3 class="cat-title">Gaming Laptops</h3>
+            <p class="cat-desc">High-performance laptops with powerful GPUs, fast refresh rates, and advanced cooling for serious gamers.</p>
+            <div class="mt-3">
+              <span class="spec-badge">RTX Graphics</span>
+              <span class="spec-badge">144Hz+ Display</span>
+              <span class="spec-badge">RGB Keyboard</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="cat-card overflow-hidden p-0">
+          <img src="https://images.unsplash.com/photo-1587614387466-0a72ca909e16?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=800&auto=format&fit=crop" class="w-100" style="height:180px; object-fit:cover;">
+          <div class="p-3">
+            <h3 class="cat-title">Business Laptops</h3>
+            <p class="cat-desc">Sleek, reliable laptops built for productivity — lightweight designs with long battery life and security features.</p>
+            <div class="mt-3">
+              <span class="spec-badge">Lightweight</span>
+              <span class="spec-badge">Long Battery</span>
+              <span class="spec-badge">TPM Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Budget -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="cat-card overflow-hidden p-0">
+          <img src="https://images.unsplash.com/photo-1650978813727-360cbaad9efd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=800&auto=format&fit=crop" class="w-100" style="height:180px; object-fit:cover;">
+          <div class="p-3">
+            <h3 class="cat-title">Budget Laptops</h3>
+            <p class="cat-desc">Affordable laptops for students and everyday use — great value without compromising on performance.</p>
+            <div class="mt-3">
+              <span class="spec-badge">Value Pick</span>
+              <span class="spec-badge">Student Friendly</span>
+              <span class="spec-badge">i3 / Ryzen 3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Refurbished -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="cat-card overflow-hidden p-0">
+          <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=800&auto=format&fit=crop" class="w-100" style="height:180px; object-fit:cover;">
+          <div class="p-3">
+            <h3 class="cat-title">Used / Refurbished</h3>
+            <p class="cat-desc">Quality-checked pre-owned laptops at unbeatable prices — tested, cleaned, and ready to use.</p>
+            <div class="mt-3">
+              <span class="spec-badge">Quality Checked</span>
+              <span class="spec-badge">Best Deals</span>
+              <span class="spec-badge">Low Price</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ BRANDS ══════════════════════════════════════════════════ -->
+<section id="brands" class="brands-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">Top Brands</span>
+      <h2 class="section-title">Available Top Laptop Brands</h2>
+      <p class="section-subtitle">We stock genuine laptops from the world's most trusted manufacturers.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="brand-card">
+          <span class="brand-logo-text">HP</span>
+          <div class="brand-tagline">Hewlett-Packard</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="brand-card">
+          <span class="brand-logo-text">Dell</span>
+          <div class="brand-tagline">Inspiron / XPS</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="brand-card">
+          <span class="brand-logo-text">Lenovo</span>
+          <div class="brand-tagline">ThinkPad / IdeaPad</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="brand-card">
+          <span class="brand-logo-text">ASUS</span>
+          <div class="brand-tagline">VivoBook / ROG</div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center mt-4" style="color:var(--text-muted);font-size:0.9rem;">
+      <i class="bi bi-info-circle me-1"></i> More brands available in store. Call us to check stock.
+    </p>
+  </div>
+</section>
+
+<!-- ══ WHY CHOOSE US ════════════════════════════════════════════ -->
+<section id="why" class="why-section">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <!-- visual panel -->
+      <div class="col-lg-5">
+        <div class="why-visual">
+          <span class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Why Netcare?</span>
+          <h2 class="section-title text-white mt-2 mb-1" style="font-size:2rem;">Kunnamkulam's Trusted Laptop Destination</h2>
+          <p style="color:rgba(255,255,255,0.65);font-size:0.92rem;">Serving Kunnamkulam and surrounding areas with genuine laptops and transparent pricing since day one.</p>
+          <div class="why-stat-grid">
+            <div class="why-stat">
+              <div class="num">500+</div>
+              <div class="lbl">Happy Customers</div>
+            </div>
+            <div class="why-stat">
+              <div class="num">4+</div>
+              <div class="lbl">Top Brands</div>
+            </div>
+            <div class="why-stat">
+              <div class="num">EMI</div>
+              <div class="lbl">Easy Options</div>
+            </div>
+            <div class="why-stat">
+              <div class="num">100%</div>
+              <div class="lbl">Genuine Stock</div>
+            </div>
+          </div>
+          <a href="tel:9544477619" class="btn-cta-call mt-4 w-100 justify-content-center" style="font-size:0.95rem;padding:14px;">
+            <i class="bi bi-telephone-fill"></i> Call: 9544477619
+          </a>
+        </div>
+      </div>
+      <!-- list -->
+      <div class="col-lg-7">
+        <span class="section-tag">Our Advantages</span>
+        <h2 class="section-title mb-4">Why Customers Choose Us</h2>
+        <ul class="why-list">
+          <li>
+            <div class="icon-wrap"><i class="bi bi-currency-rupee"></i></div>
+            <div>
+              <strong>Best Price Guarantee</strong>
+              <span>We match or beat any local competitor's price on the same model.</span>
+            </div>
+          </li>
+          <li>
+            <div class="icon-wrap"><i class="bi bi-shield-fill-check"></i></div>
+            <div>
+              <strong>Genuine Products Only</strong>
+              <span>Every laptop we sell is 100% original with valid manufacturer warranty.</span>
+            </div>
+          </li>
+          <li>
+            <div class="icon-wrap"><i class="bi bi-shop"></i></div>
+            <div>
+              <strong>Trusted Local Store</strong>
+              <span>Established in Kunnamkulam with hundreds of satisfied customers and strong community trust.</span>
+            </div>
+          </li>
+          <li>
+            <div class="icon-wrap"><i class="bi bi-arrow-left-right"></i></div>
+            <div>
+              <strong>Exchange Offers Available</strong>
+              <span>Trade in your old laptop and get attractive discounts on a new purchase.</span>
+            </div>
+          </li>
+          <li>
+            <div class="icon-wrap"><i class="bi bi-credit-card"></i></div>
+            <div>
+              <strong>EMI Options Available</strong>
+              <span>Buy your dream laptop today with easy monthly instalments — zero hassle.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURES ═════════════════════════════════════════════════ -->
+<section id="features" class="features-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">Specifications</span>
+      <h2 class="section-title">Laptops for Every Specification</h2>
+      <p class="section-subtitle">We stock a wide range of configurations to match your performance needs and budget.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="feat-row">
+          <div class="feat-icon"><i class="bi bi-cpu-fill"></i></div>
+          <div>
+            <p class="feat-title">Intel Processor Options</p>
+            <p class="feat-sub">Choose from Intel Core i3, i5, or i7 — entry-level to high-performance.</p>
+          </div>
+        </div>
+        <div class="feat-row">
+          <div class="feat-icon"><i class="bi bi-device-ssd-fill"></i></div>
+          <div>
+            <p class="feat-title">SSD Storage</p>
+            <p class="feat-sub">Fast 256GB, 512GB, and 1TB SSD options for lightning-quick boot times.</p>
+          </div>
+        </div>
+        <div class="feat-row">
+          <div class="feat-icon"><i class="bi bi-memory"></i></div>
+          <div>
+            <p class="feat-title">RAM Variants</p>
+            <p class="feat-sub">8GB for everyday tasks, 16GB for multitasking and creative work.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="feat-row">
+          <div class="feat-icon"><i class="bi bi-gpu-card"></i></div>
+          <div>
+            <p class="feat-title">Gaming Graphics Options</p>
+            <p class="feat-sub">NVIDIA GeForce GTX / RTX cards for immersive gaming and design work.</p>
+          </div>
+        </div>
+        <div class="feat-row">
+          <div class="feat-icon"><i class="bi bi-display"></i></div>
+          <div>
+            <p class="feat-title">Display Choices</p>
+            <p class="feat-sub">FHD to 4K displays — 60Hz for productivity, 120Hz–144Hz for gaming.</p>
+          </div>
+        </div>
+        <div class="feat-row">
+          <div class="feat-icon"><i class="bi bi-battery-charging"></i></div>
+          <div>
+            <p class="feat-title">Battery Life</p>
+            <p class="feat-sub">Up to 10–12 hours on business models — work all day without plugging in.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- spec tags cloud -->
+    <div class="text-center mt-4">
+      <span class="spec-badge" style="background:#e8f0fe;color:#0d6efd;">Intel Core i3</span>
+      <span class="spec-badge" style="background:#e8f0fe;color:#0d6efd;">Intel Core i5</span>
+      <span class="spec-badge" style="background:#e8f0fe;color:#0d6efd;">Intel Core i7</span>
+      <span class="spec-badge" style="background:#e8f0fe;color:#0d6efd;">AMD Ryzen</span>
+      <span class="spec-badge" style="background:#e8f0fe;color:#0d6efd;">8GB RAM</span>
+      <span class="spec-badge" style="background:#e8f0fe;color:#0d6efd;">16GB RAM</span>
+      <span class="spec-badge" style="background:#e8f0fe;color:#0d6efd;">256GB SSD</span>
+      <span class="spec-badge" style="background:#e8f0fe;color:#0d6efd;">512GB SSD</span>
+      <span class="spec-badge" style="background:#e8f0fe;color:#0d6efd;">1TB SSD</span>
+      <span class="spec-badge" style="background:#e8f0fe;color:#0d6efd;">NVIDIA RTX</span>
+      <span class="spec-badge" style="background:#e8f0fe;color:#0d6efd;">144Hz Display</span>
+      <span class="spec-badge" style="background:#e8f0fe;color:#0d6efd;">Full HD</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══════════════════════════════════════════════════════ -->
+<section class="cta-section">
+  <div class="container">
+    <div class="row align-items-center rel">
+      <div class="col-lg-7 text-white mb-4 mb-lg-0">
+        <span class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Contact Us</span>
+        <h2 class="cta-title mt-2">Call Now for<br>the Best Laptop Deals!</h2>
+        <p style="color:rgba(255,255,255,0.65);font-size:1rem;max-width:460px;">Talk to our laptop experts. We'll help you find the perfect model within your budget — no pressure, just honest advice.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end rel">
+        <div class="mb-2" style="color:rgba(255,255,255,0.5);font-size:0.85rem;letter-spacing:0.05em;text-transform:uppercase;">Mobile / WhatsApp</div>
+        <a href="tel:9544477619" class="cta-phone d-block mb-4">9544477619</a>
+        <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
+          <a href="tel:9544477619" class="btn-cta-call">
+            <i class="bi bi-telephone-fill"></i> Call Now
+          </a>
+          <a href="https://wa.me/919544477619" target="_blank" class="btn-cta-call" style="background:#25D366;">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="footer-brand">Netcare <span>Computers</span></div>
+        <p class="mt-2" style="font-size:0.88rem;">Your trusted laptop store in Kunnamkulam, Thrissur. Genuine products, best prices, and honest service.</p>
+        <div class="mt-3 d-flex gap-3">
+          <a href="https://wa.me/919544477619" target="_blank" class="btn btn-sm btn-success d-flex align-items-center gap-1">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+          </a>
+          <a href="tel:9544477619" class="btn btn-sm btn-primary d-flex align-items-center gap-1">
+            <i class="bi bi-telephone-fill"></i> Call Us
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-white mb-3 fw-700">Quick Links</h6>
+        <ul class="list-unstyled" style="font-size:0.88rem;">
+          <li class="mb-1"><a href="#categories" style="color:rgba(255,255,255,0.5);text-decoration:none;">Browse Laptops</a></li>
+          <li class="mb-1"><a href="#brands" style="color:rgba(255,255,255,0.5);text-decoration:none;">Brands</a></li>
+          <li class="mb-1"><a href="#why" style="color:rgba(255,255,255,0.5);text-decoration:none;">Why Choose Us</a></li>
+          <li class="mb-1"><a href="#features" style="color:rgba(255,255,255,0.5);text-decoration:none;">Specifications</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-white mb-3 fw-700">Contact</h6>
+        <p class="mb-1" style="font-size:0.88rem;"><i class="bi bi-telephone-fill me-2" style="color:var(--primary);"></i><a href="tel:9544477619" style="color:rgba(255,255,255,0.6);text-decoration:none;">9544477619</a></p>
+        <p class="mb-1" style="font-size:0.88rem;"><i class="bi bi-whatsapp me-2" style="color:#25D366;"></i><a href="https://wa.me/919544477619" style="color:rgba(255,255,255,0.6);text-decoration:none;">WhatsApp Us</a></p>
+        <p class="mb-0" style="font-size:0.88rem;"><i class="bi bi-geo-alt-fill me-2" style="color:#e06c00;"></i>Kunnamkulam, Thrissur, Kerala</p>
+      </div>
+    </div>
+    <hr class="footer-divider"/>
+    <p class="footer-copy text-center mb-0">© 2025 Netcare Computers, Kunnamkulam. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ══ FLOATING BUTTONS ════════════════════════════════════════ -->
+<a href="https://wa.me/919544477619" target="_blank" class="float-btn-wa" title="Chat on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+  <span class="tip">Chat on WhatsApp</span>
+</a>
+<a href="tel:9544477619" class="float-btn-call" title="Call Now">
+  <i class="bi bi-telephone-fill"></i>
+  <span class="tip">Call: 9544477619</span>
+</a>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const offset = 80;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
