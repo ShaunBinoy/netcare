@@ -414,7 +414,13 @@
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li class="ms-2"><a href="tel:+919544477619" class="call-btn"><i class="fa-solid fa-phone"></i> Call Now</a></li>
+      <li class="ms-2">
+  <a href="tel:+919544477619"
+     class="call-btn"
+     onclick="return gtag_report_call_conversion('tel:+919544477619');">
+    <i class="fa-solid fa-phone"></i> Call Now
+  </a>
+</li>
     </ul>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -428,7 +434,12 @@
     <a href="#reviews" onclick="closeMenu()">Reviews</a>
     <a href="#faq" onclick="closeMenu()">FAQ</a>
     <a href="#contact" onclick="closeMenu()">Contact</a>
-    <a href="tel:+919544477619" class="mobile-call"><i class="fa-solid fa-phone"></i> Call Now – +919544477619</a>
+    <a href="tel:+919544477619"
+   class="mobile-call"
+   onclick="return gtag_report_call_conversion('tel:+919544477619');">
+  <i class="fa-solid fa-phone"></i>
+  Call Now – +919544477619
+</a>
   </div>
 </nav>
 
@@ -830,8 +841,16 @@
   <div class="container">
     <h2>Ready to Get Your Device Fixed or Buy a New One?</h2>
     <p>Call us now or visit our store in Kunnamkulam. Fast service. Honest pricing. Expert technicians.</p>
-    <a href="tel:+919544477619" class="btn-cta-white"><i class="fa-solid fa-phone"></i> Call Now</a>
-    <a href="#contact" class="btn-cta-outline-w"><i class="fa-solid fa-location-dot"></i> Visit Store</a>
+
+    <a href="tel:+919544477619"
+       class="btn-cta-white"
+       onclick="return gtag_report_call_conversion('tel:+919544477619');">
+      <i class="fa-solid fa-phone"></i> Call Now
+    </a>
+
+    <a href="#contact" class="btn-cta-outline-w">
+      <i class="fa-solid fa-location-dot"></i> Visit Store
+    </a>
   </div>
 </div>
 
@@ -870,10 +889,17 @@
           </div>
           <div class="contact-item">
             <div class="contact-item-icon"><i class="fa-brands fa-whatsapp"></i></div>
-            <div>
-              <h6>WhatsApp</h6>
-              <a href="https://wa.me/+919544477619" target="_blank">Chat on WhatsApp</a>
-            </div>
+            
+<div>
+  <h6>WhatsApp</h6>
+  <a href="https://wa.me/919544477619"
+     target="_blank"
+     rel="noopener"
+     onclick="return gtag_report_whatsapp_conversion(this.href);">
+    Chat on WhatsApp
+  </a>
+</div>
+
           </div>
           <div class="map-wrap">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.141254500996!2d76.06173287767817!3d10.646132662407913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7955607238f99%3A0x6184c10c2de580e7!2sNETCARE%20COMPUTERS!5e0!3m2!1sen!2sin!4v1775289262208!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -965,7 +991,17 @@
         <h6>Contact</h6>
         <ul class="footer-links">
           <li><i class="fa-solid fa-phone me-2" style="color:var(--blue-light);"></i><a href="tel:+919544477619">+919544477619</a></li>
-          <li><i class="fa-brands fa-whatsapp me-2" style="color:#25D366;"></i><a href="https://wa.me/+919544477619">WhatsApp Us</a></li>
+          
+<li>
+  <i class="fa-brands fa-whatsapp me-2" style="color:#25D366;"></i>
+  <a href="https://wa.me/919544477619"
+     target="_blank"
+     rel="noopener"
+     onclick="return gtag_report_whatsapp_conversion(this.href);">
+    WhatsApp Us
+  </a>
+</li>
+
           <li><i class="fa-solid fa-location-dot me-2" style="color:var(--blue-light);"></i>Kunnamkulam, Kerala</li>
           <li><i class="fa-solid fa-clock me-2" style="color:var(--blue-light);"></i>Mon–Sat: 9AM–7PM</li>
         </ul>
@@ -1048,17 +1084,27 @@
   }
 </style>
 
+
 <!-- WhatsApp – bottom left -->
 <div class="sticky-float left">
-  <a href="https://wa.me/919544477619" target="_blank" rel="noopener" class="float-btn float-wa" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/919544477619"
+     target="_blank"
+     rel="noopener"
+     class="float-btn float-wa"
+     aria-label="Chat on WhatsApp"
+     onclick="return gtag_report_whatsapp_conversion(this.href);">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
   <span class="float-label">WhatsApp</span>
 </div>
 
+
 <!-- Call – bottom right -->
 <div class="sticky-float right">
-  <a href="tel:+919544477619" class="float-btn float-call" aria-label="Call Now">
+  <a href="tel:+919544477619"
+     class="float-btn float-call"
+     aria-label="Call Now"
+     onclick="return gtag_report_call_conversion('tel:+919544477619');">
     <i class="fa-solid fa-phone"></i>
   </a>
   <span class="float-label">Call Now</span>
@@ -1162,6 +1208,65 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
+
+<!-- Event snippet for Click to call conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+
+<script>
+function gtag_report_call_conversion(url) {
+  var callback = function () {
+    if (typeof url !== 'undefined' && url) {
+      window.location.href = url;
+    }
+  };
+
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-16690957075/Mg3MCNzHiKcdEJOW75Y-',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback,
+      'event_timeout': 2000
+    });
+
+    return false;
+  }
+
+  // If the Google tag hasn't loaded, still allow the call.
+  if (url) {
+    window.location.href = url;
+  }
+
+  return false;
+}
+</script>
+
+
+<script>
+function gtag_report_whatsapp_conversion(url) {
+  var callback = function () {
+    if (typeof url !== 'undefined' && url) {
+      window.open(url, '_blank');
+    }
+  };
+
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-16690957075/p_LyCOrBiacdEJOW75Y-',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback,
+      'event_timeout': 2000
+    });
+  } else if (url) {
+    window.open(url, '_blank');
+  }
+
+  return false;
+}
+</script>
+
+
 
 </body>
 </html>
