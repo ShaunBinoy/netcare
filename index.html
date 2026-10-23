@@ -900,9 +900,11 @@
       <textarea id="message" class="form-control" rows="5" placeholder="Tell us what you need – repair, purchase, enquiry..."></textarea>
     </div>
 
-    <button class="btn-submit" type="button">
-      <i class="fa-solid fa-paper-plane me-2"></i>Send Message
-    </button>
+    <button class="btn-submit" type="button"
+        onclick="gtag_report_conversion()">
+  <i class="fa-solid fa-paper-plane me-2"></i>
+  Send Message
+</button>
 
     <p style="font-size:0.78rem;color:var(--grey-mid);margin-top:14px;text-align:center;">
       Or call us directly at 
@@ -1142,5 +1144,24 @@ document.querySelector(".btn-submit").addEventListener("click", async () => {
   // Google Ads
   gtag('config', 'AW-16690957075');
 </script>
+<!-- Event snippet for Submit lead form (2) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16690957075/YgfdCNbI-6YdEJOW75Y-',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 </body>
 </html>
